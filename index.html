@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mokeponprueba</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container1">
+        <h1 class="titulo">🔥💧🌱 MOKEPON! ❄⚡⚓</h1>
+
+        <section id="seleccion-mokepon">
+          <h2 class="subtitulo">Elige a tu Mokepon:</h2>
+            <div id="contenedor-tarjetas-mokepon" class="tarjetas-mokepon">
+            </div>
+            <button id="boton-mokepon">Seleccionar</button>
+
+        </section>
+
+        <section id="mapa-view">
+            <h2 class="titulo">Recorre el mapa con tu mokepon</h2>
+            <canvas id="mapa"></canvas>
+            <button class="boton-up" onmouseup="detenerMovimiento()" onmousedown="moverArriba()">Up</button>
+            <div>
+                <button class="boton-down" onmouseup="detenerMovimiento()" onmousedown="moverIzquierda()">Left</button>
+                <button class="boton-right" onmouseup="detenerMovimiento()" onmousedown="moverDerecha()">Right</button>
+                <button class="boton-left" onmouseup="detenerMovimiento()" onmousedown="moverAbajo()">Down</button>
+            </div>
+        </section>
+
+        <section id="seleccion-ataque">
+            <h2 class="subtitulo">Elige tu secuencia de ataques:</h2>
+            <div id="contenedorAtaques" class="botones-ataques">
+            </div>
+            <div id="mensajes">
+                <p id="resultado">Buena suerte</p>
+                <section id="reiniciar">
+                </section>
+            </div>    
+            <div class="vidas-ataque">
+                <div class="tarjetas-ataques">
+                    <span id="vidas-jugador">0</span>
+                    <p id="mokepon-jugador"></p>
+                    <div id="ataque-del-jugador"></div>
+                </div>
+                <div class="tarjetas-ataques">
+                    <span id="vidas-enemigos">0</span>
+                    <p id="mokepon-enemigo"></p>
+                    <div id="ataque-del-enemigo"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="./js/mokeponprueba.js"></script>
+</body>
+</html>

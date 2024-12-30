@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&display=swap');
+
+body{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    background-color: #050C9C; 
+}
+.container1{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+}
+.titulo{
+    font-size: 3.5em;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: #FDDE55;
+}
+.subtitulo{
+    font-size: 2.5em;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: #FDDE55;
+}
+input[type="radio"]{
+    display: none;
+}
+input:checked + label{
+    border: solid;
+    border-color: #050C9C;
+}
+#seleccion-mokepon{
+    width: 720px;
+    background-color: #3572EF;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid;
+    margin: 10px;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+.tarjetas-mokepon, .ataque{
+    display: flex;
+    margin-bottom: 20px;
+    gap: 5px;
+}
+.tarjetas-mokepon img{
+    width: 100px;
+}
+.nombre-mokepon{
+    text-align: center;
+}
+.tarjeta{
+    padding-left: 3px;
+    padding-right: 3px;
+    background-color: #FEEFAD;
+}
+#boton-mokepon{
+    border-radius: 20px;
+    border: solid 2px;
+    width: 100px;
+    height: 30px;
+    background-color: #FEEFAD;
+}
+#seleccion-ataque{
+    display: flex;
+    width: 500px;
+    background-color: #3572EF;
+    box-sizing: content-box;
+    border: solid;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+.boton-ataque{
+    width: 40px;
+    background-color: #FEEFAD;
+    box-sizing: border-box;
+    border-color: transparent;
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+}
+#mensajes{
+    width: 200px;
+    background-color: #FDDE55;
+    padding: 5px;
+    border: solid;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.boton-reinicio{
+    border: solid;
+    border-color: black;
+    border-radius: 20px;
+    background-color: #3572EF;
+    color: #FDDE55;
+    width: 100px;
+    height: 30px;
+}
+.vidas-ataque{
+    display: grid;
+    grid-template-columns: 120px 120px;
+    gap: 10px;
+    text-align: center;
+    margin-top: 10px;
+    padding: 5px;
+}
+.vidas-ataque > div {
+    background-color: #FDDE55;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar los elementos dentro de cada celda del grid */
+    justify-content: center;
+    text-align: center;
+    border: solid;
+}
+.vidas-ataque p {
+    margin: 5px;
+}
+.grid-item {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+#mapa-view{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#mapa-view button{
+    width: 60px;
+    height: 40px;
+    border-radius: 20px;
+    background: white;
+    border: 5px solid black;
+    color: black;
+    font-family: "Oswald", sans-serif;
+}
+.boton-up{
+    margin-top: 10px;
+}
+#mapa{
+    border: 2px solid black;
+}
+@media (max-width: 720px){
+    .tarjetas-mokepon, .ataque{
+        flex-direction: column;
+    }
+    #seleccion-mokepon{
+        width: 200px;
+    }
+}
+@media (max-width: 430px){
+    .titulo{
+        font-size: 2em;
+    }
+    .subtitulo{
+        font-size: 1.5em;
+    }
+    #seleccion-ataque{
+        width: 400px;
+    }
+}
